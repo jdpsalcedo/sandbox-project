@@ -8,14 +8,7 @@ from botocore.exceptions import ClientError
 
 
 def append_text(message, file_name, bucket):
-    """Upload a file to an S3 bucket
-
-    :param file_name: File to upload
-    :param bucket: Bucket to upload to
-    :param object_name: S3 object name. If not specified then file_name is used
-    :return: True if file was uploaded, else False
-    """
-
+    
     # Can create a client
     s3_client = boto3.client('s3')
     # Can also instantiate an S3 resource object
