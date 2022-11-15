@@ -30,3 +30,4 @@ file_name = 'hello_world.txt'
 bucket = 'johnsalcedobucket'
 
 append_text(message, file_name , bucket)
+print (message)
